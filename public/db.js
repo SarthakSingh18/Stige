@@ -5,7 +5,7 @@ module.exports={
     signup:function(user){
         return new Promise(async(resolve,reject)=>{
             try{
-                const client=await mongoClient.connect("mongodb+srv://root:NAyxFXlSoOaliUFX@cluster0-3fupj.mongodb.net/test?retryWrites=true&w=majority",
+                const client=await mongoClient.connect("Secret",
                 {useNewUrlParser: true,
                 useUnifiedTopology: true});
                 const db=client.db("stige");
@@ -27,7 +27,7 @@ module.exports={
     login:function(user){
         return new Promise(async(resolve,reject)=>{
             try{
-                const client=await mongoClient.connect("mongodb+srv://root:NAyxFXlSoOaliUFX@cluster0-3fupj.mongodb.net/test?retryWrites=true&w=majority",
+                const client=await mongoClient.connect("Secret",
                 {useNewUrlParser: true,
                 useUnifiedTopology: true});
                 const db=client.db("stige");
@@ -55,7 +55,7 @@ module.exports={
     createHash:function(email,hostAddress){
         return new Promise(async(resolve,reject)=>{
             try{
-                const client=await mongoClient.connect("mongodb+srv://root:NAyxFXlSoOaliUFX@cluster0-3fupj.mongodb.net/test?retryWrites=true&w=majority",
+                const client=await mongoClient.connect("Secret",
                 {useNewUrlParser: true,
                 useUnifiedTopology: true});
                 const db=client.db("stige");
@@ -107,7 +107,7 @@ module.exports={
     resetPassword:function(token){
         return new Promise(async(resolve,reject)=>{
             try{
-                const client=await mongoClient.connect("mongodb+srv://root:NAyxFXlSoOaliUFX@cluster0-3fupj.mongodb.net/test?retryWrites=true&w=majority",
+                const client=await mongoClient.connect("Secret",
                 {useNewUrlParser: true,
                 useUnifiedTopology: true});
                 const db=client.db("stige");
@@ -133,7 +133,7 @@ module.exports={
     updatePassword:function(password,token){
         return new Promise(async(resolve,reject)=>{
             try{
-                const client=await mongoClient.connect("mongodb+srv://root:NAyxFXlSoOaliUFX@cluster0-3fupj.mongodb.net/test?retryWrites=true&w=majority",
+                const client=await mongoClient.connect("Secret",
                 {useNewUrlParser: true,
                 useUnifiedTopology: true});
                 const db=client.db("stige");
